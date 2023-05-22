@@ -1,6 +1,6 @@
-package repo;
+package com.medicare.medicine.repo;
 
-import model.Medicine;
+import com.medicare.medicine.model.Medicine;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MedicineRepo  extends JpaRepository<Medicine,Integer> {
