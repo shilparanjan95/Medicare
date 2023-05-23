@@ -18,7 +18,7 @@ public class Medicine {
     private Integer quantity;
     private Integer qty;
     private Double price;
-    @Column(columnDefinition = "boolean default true")
+    //@Column(columnDefinition = "boolean default true")
     private boolean activate;
     private String description;
     @OneToOne

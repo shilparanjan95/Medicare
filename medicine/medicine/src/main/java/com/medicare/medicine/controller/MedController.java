@@ -67,5 +67,9 @@ public class MedController {
     }
 
 
+    @PutMapping("/medicine/{id}")
+    public String activateMedicine(@PathVariable("id") Integer id,@RequestBody Medicine med)
+    { return mediService.updateMedicine(id);
+    }
 
 }
