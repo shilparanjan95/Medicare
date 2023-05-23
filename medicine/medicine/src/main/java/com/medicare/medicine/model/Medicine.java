@@ -16,6 +16,7 @@ public class Medicine {
     private String name;
     private String brand;
     private Integer quantity;
+    private Integer qty;
     private Double price;
     @Column(columnDefinition = "boolean default true")
     private boolean activate;

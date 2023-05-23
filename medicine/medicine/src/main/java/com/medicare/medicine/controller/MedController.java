@@ -60,5 +60,12 @@ public class MedController {
         return   mediService.getCategory();
     }
 
+    @GetMapping("/search/{param}")
+    public List<Medicine> searchMedicine(@PathVariable("param") String param)
+    {
+        return mediService.getByParam(param);
+    }
+
+
 
 }
