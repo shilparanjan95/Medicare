@@ -1,0 +1,30 @@
+<div class="container container-fluid"> 
+<div class="row">
+<div class="col-md-8">
+    <img  src="./assets/Img/slider2.jpg" alt="Second slide">
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h3>Login</h3>
+
+</div>
+    
+<div class="card-body">
+    <h5 style="color: red;">{{msg}}</h5>
+<form [formGroup] = "loginForm" (ngSubmit)="login()" >
+<input type="email" formControlName = "email" class="form-control" placeholder="Enter Email"><br>
+<input type="password" formControlName = "password" class="form-control"  placeholder="Enter Password" ><br>
+<input type="submit" value="LOGIN" class="btn btn-success" style="background-color: rgb(255, 111, 97);margin-left: 110px;"><br>
+
+</form>
+</div>
+<div class="card-footer">
+    New User <a href = "register" >Register Here</a>
+
+</div>
+    
+</div>
+</div>
+</div>
+</div>

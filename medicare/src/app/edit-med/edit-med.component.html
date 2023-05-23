@@ -1,0 +1,33 @@
+<div class = "container container-fluid">
+    <div class="row">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+   <div class="card">
+   <div class="card-header">
+  <h3>Edit Medicines</h3>
+   </div>
+   <div class="card-body">
+    <form [formGroup] ="editMed" (ngSubmit)="editMedicine()">
+
+    <label>Name :</label>  <input type="text" [(ngModel)] ="name" value="{{medicine.name}}" class="form-control" ><br>
+    <label>Brand :</label>  <input type="text"  [(ngModel)]  = "brand"  value = "{{medicine.brand}}" class="form-control" ><br>
+    <label>Description :</label>  <textarea   [(ngModel)] = "description"  value="{{medicine.description}}" class="form-control" ></textarea><br>
+
+    <label>Quantity :</label>  <input type="text"  [(ngModel)] ="quantity"  value ="{{medicine.quantity}}" class="form-control" /><br>
+    <label>Price :</label>  <input type="number"  [(ngModel)] ="price" value ="{{medicine.price}}"  class="form-control"><br>
+   
+    <input type="submit" class="btn btn-primary" value="Update Medicine">
+    </form>
+   </div>
+   <div class="card-footer">
+
+   </div>
+   </div>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+    </div>
+</div>

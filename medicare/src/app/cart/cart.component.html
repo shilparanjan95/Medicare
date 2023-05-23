@@ -1,0 +1,37 @@
+
+<div class = "container container-fluid">
+    <div class="row">
+    <div class="col-md-1">
+
+    </div>
+    <div class="col-md-10">
+
+    <br>
+<table class="table table-stripped" style="margin-top: 40px;">
+<thead>
+
+   <th>Name</th>
+   <th>Brand</th>
+   <th>Price</th>
+   <th>Quantity</th>
+   <th>Total</th>
+</thead>
+
+<tr>
+    <td>{{medicine.name}}</td>
+    <td>{{medicine.brand}}</td>
+    <td>{{medicine.price}}</td>
+    <td><input type="text" [(ngModel)] = "qty" (change)="totalVal()" ></td>
+    <td>{{total | currency :"INR" }}</td>
+    
+</tr>
+</table>
+<input type ="button" value="Continue Shopping" class="btn btn-warning"  (click)="back()">
+
+<input type ="button" value="Proceed To Pay" class="btn btn-info" style="margin-left: 390px;" (click)="next()">
+</div>
+<div class="col-md-1">
+
+</div>
+</div>
+</div>

@@ -1,0 +1,35 @@
+<div class="container container-fluid">
+<div class="row">
+<div class="col-md-2">
+
+</div>
+
+<div class="col-md-8">
+<div class="card">
+<div class="card-header">
+<h1>Register</h1>
+</div>
+<div class="card-body">
+<form [formGroup] = "regForm" (ngSubmit)="addUser()">
+<input type="text" placeholder="Enter UserName" class="form-control" formControlName="name"><br>
+<input type="email" placeholder="Enter Email" class="form-control" formControlName="email"><br>
+<input type="date" placeholder="Select DOB" class="form-control" formControlName="dob"><br>
+<textarea placeholder="Enter Address" class="form-control" formControlName="address"></textarea><br>
+<input type="password" placeholder="Enter Password" class="form-control" formControlName="password"><br>
+<input type="submit" value="REGISTER" class="btn btn-success" style="margin-left: 25px;" [disabled]=regForm.invalid><br><br>
+
+</form>
+
+<div class="card-footer">
+Already Registered<a href="login"> Login Here </a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-2">
+
+</div>
+</div>
+
+
+</div>

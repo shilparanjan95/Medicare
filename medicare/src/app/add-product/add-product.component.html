@@ -1,0 +1,37 @@
+<div class = "container container-fluid">
+    <div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+   <div class="card">
+   <div class="card-header">
+  <h3>Add Medicines</h3>
+   </div>
+   <div class="card-body">
+    <form [formGroup]="addMed" (submit)="addMedicine()">
+    <label>Name :</label>  <input type="text" formControlName="name" class="form-control"><br>
+    <label>Brand :</label>  <input type="text" formControlName="brand" class="form-control"><br>
+    <label>Description :</label>  <textarea formControlName="description" class="form-control"></textarea><br>
+
+    <label>Quantity :</label>  <input type="number" formControlName="quantity" class="form-control"><br>
+    <label>Price :</label>  <input type="number" formControlName="price" class="form-control"><br>
+    <label>Category :</label>  <select formControlName="category" class="form-control" >
+        <option>Select Category</option>
+        
+        <option *ngFor = "let cat of categories" >{{cat.name}}</option>
+        </select><br>
+    <a href="addCategory">Add New Category</a><br>
+    <input type="submit" class="btn btn-primary" value="Add Medicine" [disabled]= addMed.invalid>
+    </form>
+   </div>
+   <div class="card-footer">
+
+   </div>
+   </div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+    </div>
+</div>
