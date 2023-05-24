@@ -1,0 +1,25 @@
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-md-1">
+
+        </div>
+    <div class="col-md-10">
+     <div class="card">
+        <div class="card-header">
+        <h3>Add Genre</h3>
+        </div>
+        <div class="card-body">
+        <form [formGroup]="catForm" (submit)="addCategory()">
+            <input type="text"  placeholder="Category Name" formControlName="name" class="form-control"><br>
+            <input type="submit" value=" Add Category" class="btn btn-md btn-success" [disabled]=catForm.invalid><br>
+
+            <a href="addMedicine">Add Genre</a>
+        </form>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+
+    </div>
+    </div>
+</div>
