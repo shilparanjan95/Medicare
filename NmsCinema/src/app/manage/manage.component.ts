@@ -28,7 +28,7 @@ export class ManageComponent implements OnInit {
   }
 
   deletMed(id:number)
-  {    alert("Medicine Deleted !");
+  {    alert("Movie Deleted !");
       this.service.deleteMovie(id).subscribe(
         data => {
           
@@ -39,7 +39,7 @@ export class ManageComponent implements OnInit {
 
    activate(id:number,med:Movie)
   {
-    alert("Medicine Activated/Deactivated !");
+    alert("Movie Activated/Deactivated !");
     this.service.activateMovie(id,med).subscribe(
       data => {
         this.getMedicines();

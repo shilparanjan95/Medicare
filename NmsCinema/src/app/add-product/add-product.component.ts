@@ -31,7 +31,7 @@ export class AddProductComponent implements OnInit {
   addMed = this.builder.group(
     {name : this.builder.control('',Validators.required),
     duration : this.builder.control('',Validators.required),
-    cast : this.builder.control('',Validators.required),
+    starCast : this.builder.control('',Validators.required),
     quantity : this.builder.control('',Validators.required),
     price : this.builder.control('',Validators.required),
     category : this.builder.control('',Validators.required)

@@ -18,5 +18,5 @@ public class Category {
     private String name;
     @JsonIgnore
     @OneToMany(mappedBy = "category")
-    private List<Movie> medicine;
+    private List<Movie> movie;
 }

@@ -1,17 +1,27 @@
 
 <div class="container container-fluid"> 
     <div class="row">
-    
-    <div class="col-md-12">
-<h3 style="background-color: cornflowerblue;">Payment Completed ! Get Well Soon </h3>
+        <div class="col-md-1">
+            <img  src="./assets/Img/movie3.jpg" alt="Second slide">
+
+            </div>
+    <div class="col-md-10">
+<h3 style="background-color: rgb(100, 175, 237);">Payment Completed ! Enjoy the Show <br>
+ Thanks for Booking!  {{userName}}
+</h3>
 <table class="table table-stripped">
-    <thead class="thead-light">
+    <thead style="background-color: aquamarine;">
         <th> Name : </th><th>{{name | uppercase}}</th>
-        <th>Brand : </th><th>{{brand | uppercase}}</th>
+        <th>Star Cast : </th><th>{{cast | uppercase}}</th>
+        <th>Show Timming : </th><th>{{brand | uppercase}}</th>
         <th> Price : </th><th>{{price |currency :"INR"}}</th>
     </thead>
 </table>
 </div>
 
+<div class="col-md-1">
+    <img  src="./assets/Img/movie3.jpg" alt="Second slide">
+
+    </div>
 </div>
 </div>

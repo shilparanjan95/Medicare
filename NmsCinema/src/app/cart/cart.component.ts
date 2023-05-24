@@ -37,7 +37,8 @@ export class CartComponent implements OnInit {
     {
       sessionStorage.setItem("name",this.movie.name);
       sessionStorage.setItem("price",this.total+"");
-      sessionStorage.setItem("brand",this.movie.duration+"");
+      sessionStorage.setItem("duration",this.movie.duration);
+      sessionStorage.setItem("cast",this.movie.starCast+"");
       this.router.navigate(['success']);
 
 

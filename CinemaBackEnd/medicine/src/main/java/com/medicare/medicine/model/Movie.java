@@ -1,13 +1,12 @@
 package com.medicare.medicine.model;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Data
-@Table
+@Table(name="Movie_Data")
 public class Movie {
 
     @Id
@@ -20,9 +19,9 @@ public class Movie {
     private Integer quantity;
     private Integer qty;
     private Double price;
-    @Column(columnDefinition =  "boolean default true ")
+    @Column(columnDefinition =  "boolean default true")
     private boolean activate;
-    private String cast;
+    private String starCast;
     @OneToOne
     @JoinColumn(columnDefinition = "category_Id")
     private Category category;

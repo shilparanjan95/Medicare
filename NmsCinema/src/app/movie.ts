@@ -11,10 +11,10 @@ export class Movie {
     activate:boolean;
     description:string;
     category:Category;
-    cast:number;
+    starCast:string;
 
     
-    constructor(name:string,duration:string,quantity:number,price:number,activate:boolean,description:string,category:Category)
+    constructor(name:string,duration:string,quantity:number,price:number,activate:boolean,description:string,starCast:string,category:Category)
     {
 
 
@@ -25,6 +25,7 @@ export class Movie {
         this.activate = activate;
         this.description = description;
         this.category = category;
+        this.starCast = starCast;
     }
 }
 

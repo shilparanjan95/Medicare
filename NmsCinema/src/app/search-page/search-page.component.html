@@ -1,20 +1,24 @@
 <div class="container container-fluid">
     <div class="row">
+        <div class="col-md-1">
+            <img  src="./assets/Img/movie3.jpg" alt="Second slide">
+        </div>
+    <div class="col-md-10">
         
-    <div class="col-md-12">
      <div class="card">
         <div class="card-header">
-        <h3>Search Medicines</h3>
+        <h3>Search Movies</h3>
         </div>
         <div class="card-body">
             <form [formGroup]= "searchForm">
-        <input type = "text" placeholder="Search By Medicine Name Category Brand" class="form-control" formControlName = "param"><br>
-        <input type = "submit" value="Search Medicine" class="btn btn-sm btn-primary" (click)="search()" ><br>
+        <input type = "text" placeholder="Search By Movie Name Category Cast" class="form-control" formControlName = "param"><br>
+        <input type = "submit" value="Search Movies" class="btn btn-sm btn-primary" (click)="search()" ><br>
          </form>
         <table  class = " table  table-stripped" style="background-color: gray;">
         <thead class="thead thead-light">
-         <th>Product</th>
-         <th>Brand</th>
+         <th>Movie</th>
+         <th>Cast</th>
+         <th>Timing</th>
          <th>Price</th> 
 
         <!-- <th>Quantity</th> -->
@@ -22,12 +26,12 @@
          <th>Cart Operations</th>
         </thead>
         <tr *ngFor = "let med of medicines ; let i = index ">
-         <td><p>{{med.name}}</p>
-            
-            <p>{{med.description}}</p>
+         <td> <p>{{med.name}}</p>
+         </td>
+           <td> <p> {{med.starCast}}</p>
            <!-- <input *ngIf = "i == medicines.length-1"   type ="button" value = "Continue Shopping" class="btn btn-sm btn-info"> -->
         </td>
-        <td>{{med.brand}}</td>
+        <td>{{med.duration}}</td>
          <td>{{med.price}}</td>
     <!--    <td><input type="number" class="form-control"   id="qty_{{i}}" name ="qty_{{i}}"></td> -->
         
@@ -43,7 +47,9 @@
         </div>
         </div>
     </div>
-    
+    <div class="col-md-1">
+        <img  src="./assets/Img/movie3.jpg" alt="Second slide">
+    </div>
     </div>
 </div>
 

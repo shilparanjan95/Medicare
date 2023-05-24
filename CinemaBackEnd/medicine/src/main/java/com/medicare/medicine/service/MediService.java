@@ -70,7 +70,7 @@ public class MediService {
     public List<Movie> getByParam(String param)
     {
         List<Movie> medList = new ArrayList<>();
-       List<Movie> ByNameMeds =  movieRepo.findByNameIgnoreCaseOrCastIgnoreCase(param,param);
+       List<Movie> ByNameMeds =  movieRepo.findByNameIgnoreCaseOrStarCastIgnoreCase(param,param);
        if(!ByNameMeds.isEmpty())
        {
            medList.addAll(ByNameMeds);
